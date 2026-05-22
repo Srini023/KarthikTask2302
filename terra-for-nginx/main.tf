@@ -209,3 +209,4 @@ resource "kubernetes_ingress_v1" "nginx_ingress_route" {
     }
   }
 }
+
