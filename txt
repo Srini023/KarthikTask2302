@@ -51,4 +51,8 @@ karthiktask-nginx-cluster  us-central1-a  1.35.3-gke.1389000  34.41.55.1  e2-med
 PS C:\Users\user\terraform\niginx> gcloud container clusters get-credentials karthiktask-nginx-cluster --zone us-central1-a
 Fetching cluster endpoint and auth data.
 CRITICAL: ACTION REQUIRED: gke-gcloud-auth-plugin, which is needed for continued use of kubectl, was not found or is not executable. Install gke-gcloud-auth-plugin for use with kubectl by following https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl#install_plugin
-kubeconfig entry generated for karthiktask-nginx-cluster.
+kubeconfig entry generated for karthiktask-nginx-cluster
+
+PS C:\Users\user> gcloud container clusters get-credentials karthiktask-nginx-cluster --zone us-central1-a
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for karthiktask-nginx-cluster..
