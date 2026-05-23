@@ -55,4 +55,19 @@ kubeconfig entry generated for karthiktask-nginx-cluster
 
 PS C:\Users\user> gcloud container clusters get-credentials karthiktask-nginx-cluster --zone us-central1-a
 Fetching cluster endpoint and auth data.
-kubeconfig entry generated for karthiktask-nginx-cluster..
+kubeconfig entry generated for karthiktask-nginx-cluster.
+
+PS C:\Users\user\terraform\niginx> kubectl config current-context
+gke_srinisre023_us-central1-a_karthiktask-nginx-cluster
+PS C:\Users\user\terraform\niginx> kubectl get ns
+NAME                                STATUS   AGE
+default                             Active   39h
+gke-managed-cim                     Active   39h
+gke-managed-networking-dra-driver   Active   39h
+gke-managed-system                  Active   39h
+gke-managed-volumepopulator         Active   39h
+gmp-public                          Active   39h
+gmp-system                          Active   39h
+kube-node-lease                     Active   39h
+kube-public                         Active   39h
+kube-system                         Active   39h.
