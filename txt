@@ -39,4 +39,10 @@ or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
 PS C:\Users\user\terraform\niginx> gcloud projects list
 PROJECT_ID                      NAME              PROJECT_NUMBER  ENVIRONMENT
 project-7a6066a9-b9df-4971-a8b  My First Project  727946271948
-srinisre023                     SriniSRE023       421081644420g
+srinisre023                     SriniSRE023       42108164442
+
+
+
+PS C:\Users\user\terraform\niginx> gcloud container clusters list
+NAME                       LOCATION       MASTER_VERSION      MASTER_IP   MACHINE_TYPE  NODE_VERSION        NUM_NODES  STATUS   STACK_TYPE
+karthiktask-nginx-cluster  us-central1-a  1.35.3-gke.1389000  34.41.55.1  e2-medium     1.35.3-gke.1389000             RUNNING  IPV4
