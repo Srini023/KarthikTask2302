@@ -13,4 +13,13 @@ Changes to Outputs:
 │   on main.tf line 84, in resource "kubernetes_manifest" "letsencrypt_issuer":
 │   84: resource "kubernetes_manifest" "letsencrypt_issuer" {
 │
-│ cannot create REST client: no client config
+│ cannot create REST client: no client confi
+
+provider "kubernetes" {
+  host                   = google_container_cluster.primary.endpoint
+  cluster_ca_certificate = base64decode(
+    google_container_cluster.primary.master_auth[0].cluster_ca_certificate
+  )
+  token                  = data.google_client_config.default.access_token
+}
+g
