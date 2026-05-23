@@ -34,4 +34,9 @@ You may set it for your current workspace by running:
 
   $ gcloud config set project VALUE
 
-or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]g
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+
+PS C:\Users\user\terraform\niginx> gcloud projects list
+PROJECT_ID                      NAME              PROJECT_NUMBER  ENVIRONMENT
+project-7a6066a9-b9df-4971-a8b  My First Project  727946271948
+srinisre023                     SriniSRE023       421081644420g
