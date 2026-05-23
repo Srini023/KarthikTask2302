@@ -22,4 +22,16 @@ provider "kubernetes" {
   )
   token                  = data.google_client_config.default.access_token
 }
-g
+
+
+PS C:\Users\user\terraform\niginx> gcloud config get-value project
+(unset)
+PS C:\Users\user\terraform\niginx> gcloud container clusters list
+ERROR: (gcloud.container.clusters.list) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]g
