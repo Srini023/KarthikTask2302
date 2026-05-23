@@ -70,4 +70,23 @@ gmp-public                          Active   39h
 gmp-system                          Active   39h
 kube-node-lease                     Active   39h
 kube-public                         Active   39h
-kube-system                         Active   39h.
+kube-system                         Active   39h
+
+
+
+Plan: 10 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + application_secured_url_cloudflare = "https://srini23.com"
+  + application_secured_url_nginx      = "https://srini23.com"
+  + cloudflare_record_status           = (known after apply)
+  + gcr_pushed_image                   = "gcr.io/srinisre023/my-nginx-app:latest"
+  + ingress_public_ip                  = (known after apply)
+╷
+│ Error: API did not recognize GroupVersionKind from manifest (CRD may not be installed)
+│
+│   with kubernetes_manifest.letsencrypt_issuer,
+│   on main.tf line 84, in resource "kubernetes_manifest" "letsencrypt_issuer":
+│   84: resource "kubernetes_manifest" "letsencrypt_issuer" {
+│
+│ no matches for kind "ClusterIssuer" in group "cert-manager.io".
