@@ -89,4 +89,21 @@ Changes to Outputs:
 │   on main.tf line 84, in resource "kubernetes_manifest" "letsencrypt_issuer":
 │   84: resource "kubernetes_manifest" "letsencrypt_issuer" {
 │
-│ no matches for kind "ClusterIssuer" in group "cert-manager.io".
+│ no matches for kind "ClusterIssuer" in group "cert-manager.io"
+
+
+PS C:\Users\user\terraform\niginx> kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.16.3/cert-manager.crds.yaml
+customresourcedefinition.apiextensions.k8s.io/certificaterequests.cert-manager.io created
+customresourcedefinition.apiextensions.k8s.io/certificates.cert-manager.io created
+customresourcedefinition.apiextensions.k8s.io/challenges.acme.cert-manager.io created
+customresourcedefinition.apiextensions.k8s.io/clusterissuers.cert-manager.io created
+customresourcedefinition.apiextensions.k8s.io/issuers.cert-manager.io created
+customresourcedefinition.apiextensions.k8s.io/orders.acme.cert-manager.io created
+PS C:\Users\user\terraform\niginx> helm repo add jetstcak https://charts.jetstack.io
+helm : The term 'helm' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ helm repo add jetstcak https://charts.jetstack.io
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (helm:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException.
